@@ -1,27 +1,9 @@
-/**entropy1.sc
-project: IFT598Test   NEW ScalaIDE 4.7.0
-ws: eclipsews470
-sc: entropy1.sc
-This illustrates reading in a csv file, parsing it an loading
-up a case class StickFigure instances.
-These instances are then the bases for further processing.
-This is a companion file to
-doodles.sc in this same project
-Take Away Technology:
-1. Reading in a csv file
-2. Parsing it by splitting on commas
-3. Loading case class StickFigure instances , useful for further processing
 
-
-
-2018-01-20 revised r.r.
-*/
 package main.scala.apps
 import scala.io.Source
 import scala.math._
 
 object entropy1 {
-// a file I made up matching the '1' and '0'  of the stick figures of Fawcett Ch 3 pg 49
  val fn = "C:/aaprograms/datasets/stickFigEntropy.csv"
                                                   //> fn  : String = C:/aaprograms/datasets/stickFigEntropy.csv
  val figureData = Source.fromFile(fn).getLines.toList
